@@ -4,25 +4,55 @@ const redis = require("redis");
 const util = require("util");
 const KEY = `account1/balance`;
 const DEFAULT_BALANCE = 100;
+
 exports.chargeRequestRedis = async function (input) {
-    const redisClient = await getRedisClient();
-    var remainingBalance = await getBalanceRedis(redisClient, KEY);
     var charges = getCharges();
-    const isAuthorized = authorizeRequest(remainingBalance, charges);
-    if (!isAuthorized) {
+    const redisClient = await getRedisClient();
+    try {
+        // Start a Redis transaction
+        const multi = redisClient.multi();
+
+        // Watch the balance key for changes
+        multi.watch(KEY);
+
+        // Get the remaining balance
+        const remainingBalance = await getBalanceRedis(redisClient, KEY);
+
+        // Check if the request is authorized
+        const isAuthorized = authorizeRequest(remainingBalance, charges);
+        if (!isAuthorized) {
+            multi.discard(KEY);
+            return {
+                remainingBalance,
+                isAuthorized,
+                charges: 0,
+            };
+        }
+
+        // Perform the charge operation
+        multi.decrby(KEY, charges);
+
+        // Execute the transaction
+        const results = await util.promisify(multi.exec).call(multi);
+
+        if (!results) {
+            // Transaction failed, retry or handle the failure
+            throw new Error("Transaction failed. Retry or handle the failure.");
+        }
+
+        // Get the updated balance
+        const updatedBalance = await getBalanceRedis(redisClient, KEY);
+
         return {
-            remainingBalance,
+            remainingBalance: updatedBalance,
+            charges,
             isAuthorized,
-            charges: 0,
         };
+    } catch (error) {
+        // Handle transaction failure or other errors
+        console.error("An error occurred:", error);
+        throw error;
     }
-    remainingBalance = await chargeRedis(redisClient, KEY, charges);
-    await disconnectRedis(redisClient);
-    return {
-        remainingBalance,
-        charges,
-        isAuthorized,
-    };
 };
 exports.resetRedis = async function () {
     const redisClient = await getRedisClient();
