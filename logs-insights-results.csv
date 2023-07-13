@@ -1,0 +1,41 @@
+@timestamp,@message,@logStream,@log
+2023-07-13 13:16:17.801,"REPORT RequestId: 8ffd2907-f3ac-4957-bb9d-c84f2839153d	Duration: 19.14 ms	Billed Duration: 20 ms	Memory Size: 128 MB	Max Memory Used: 107 MB	
+",2023/07/13/[$LATEST]17b2abd831cf4b8cb62ce8dee8d82504,435639112445:/aws/lambda/redis-stack-charge_request_redis-lambda-fn
+2023-07-13 13:16:17.801,"END RequestId: 8ffd2907-f3ac-4957-bb9d-c84f2839153d
+",2023/07/13/[$LATEST]17b2abd831cf4b8cb62ce8dee8d82504,435639112445:/aws/lambda/redis-stack-charge_request_redis-lambda-fn
+2023-07-13 13:16:17.785,"2023-07-13T13:16:17.785Z	8ffd2907-f3ac-4957-bb9d-c84f2839153d	INFO	redis client ready
+",2023/07/13/[$LATEST]17b2abd831cf4b8cb62ce8dee8d82504,435639112445:/aws/lambda/redis-stack-charge_request_redis-lambda-fn
+2023-07-13 13:16:17.782,"START RequestId: 8ffd2907-f3ac-4957-bb9d-c84f2839153d Version: $LATEST
+",2023/07/13/[$LATEST]17b2abd831cf4b8cb62ce8dee8d82504,435639112445:/aws/lambda/redis-stack-charge_request_redis-lambda-fn
+2023-07-13 13:16:17.723,"REPORT RequestId: 3653856f-52f8-400e-bd14-d049d288052d	Duration: 18.82 ms	Billed Duration: 19 ms	Memory Size: 128 MB	Max Memory Used: 107 MB	
+",2023/07/13/[$LATEST]17b2abd831cf4b8cb62ce8dee8d82504,435639112445:/aws/lambda/redis-stack-charge_request_redis-lambda-fn
+2023-07-13 13:16:17.723,"END RequestId: 3653856f-52f8-400e-bd14-d049d288052d
+",2023/07/13/[$LATEST]17b2abd831cf4b8cb62ce8dee8d82504,435639112445:/aws/lambda/redis-stack-charge_request_redis-lambda-fn
+2023-07-13 13:16:17.721,"2023-07-13T13:16:17.721Z	3653856f-52f8-400e-bd14-d049d288052d	INFO	redis client ready
+",2023/07/13/[$LATEST]17b2abd831cf4b8cb62ce8dee8d82504,435639112445:/aws/lambda/redis-stack-charge_request_redis-lambda-fn
+2023-07-13 13:16:17.717,"REPORT RequestId: 5928c8f9-57d5-49f4-bac8-58ce855e867f	Duration: 6.85 ms	Billed Duration: 7 ms	Memory Size: 128 MB	Max Memory Used: 104 MB	
+",2023/07/13/[$LATEST]448df27dba9a4676ae21cb1307075c14,435639112445:/aws/lambda/redis-stack-charge_request_redis-lambda-fn
+2023-07-13 13:16:17.717,"END RequestId: 5928c8f9-57d5-49f4-bac8-58ce855e867f
+",2023/07/13/[$LATEST]448df27dba9a4676ae21cb1307075c14,435639112445:/aws/lambda/redis-stack-charge_request_redis-lambda-fn
+2023-07-13 13:16:17.714,"2023-07-13T13:16:17.714Z	5928c8f9-57d5-49f4-bac8-58ce855e867f	INFO	redis client ready
+",2023/07/13/[$LATEST]448df27dba9a4676ae21cb1307075c14,435639112445:/aws/lambda/redis-stack-charge_request_redis-lambda-fn
+2023-07-13 13:16:17.710,"START RequestId: 5928c8f9-57d5-49f4-bac8-58ce855e867f Version: $LATEST
+",2023/07/13/[$LATEST]448df27dba9a4676ae21cb1307075c14,435639112445:/aws/lambda/redis-stack-charge_request_redis-lambda-fn
+2023-07-13 13:16:17.705,"START RequestId: 3653856f-52f8-400e-bd14-d049d288052d Version: $LATEST
+",2023/07/13/[$LATEST]17b2abd831cf4b8cb62ce8dee8d82504,435639112445:/aws/lambda/redis-stack-charge_request_redis-lambda-fn
+2023-07-13 13:16:17.701,"END RequestId: f7a74111-8bdc-4ec7-b10b-81ad4d24f294
+",2023/07/13/[$LATEST]17b2abd831cf4b8cb62ce8dee8d82504,435639112445:/aws/lambda/redis-stack-charge_request_redis-lambda-fn
+2023-07-13 13:16:17.701,"REPORT RequestId: f7a74111-8bdc-4ec7-b10b-81ad4d24f294	Duration: 21.03 ms	Billed Duration: 22 ms	Memory Size: 128 MB	Max Memory Used: 107 MB	
+",2023/07/13/[$LATEST]17b2abd831cf4b8cb62ce8dee8d82504,435639112445:/aws/lambda/redis-stack-charge_request_redis-lambda-fn
+2023-07-13 13:16:17.684,"2023-07-13T13:16:17.684Z	f7a74111-8bdc-4ec7-b10b-81ad4d24f294	INFO	redis client ready
+",2023/07/13/[$LATEST]17b2abd831cf4b8cb62ce8dee8d82504,435639112445:/aws/lambda/redis-stack-charge_request_redis-lambda-fn
+2023-07-13 13:16:17.680,"START RequestId: f7a74111-8bdc-4ec7-b10b-81ad4d24f294 Version: $LATEST
+",2023/07/13/[$LATEST]17b2abd831cf4b8cb62ce8dee8d82504,435639112445:/aws/lambda/redis-stack-charge_request_redis-lambda-fn
+2023-07-13 13:16:17.662,"REPORT RequestId: 9e17a3e0-c3fc-4fc6-a571-5c93d8134f14	Duration: 7.91 ms	Billed Duration: 8 ms	Memory Size: 128 MB	Max Memory Used: 107 MB	
+",2023/07/13/[$LATEST]17b2abd831cf4b8cb62ce8dee8d82504,435639112445:/aws/lambda/redis-stack-charge_request_redis-lambda-fn
+2023-07-13 13:16:17.662,"END RequestId: 9e17a3e0-c3fc-4fc6-a571-5c93d8134f14
+",2023/07/13/[$LATEST]17b2abd831cf4b8cb62ce8dee8d82504,435639112445:/aws/lambda/redis-stack-charge_request_redis-lambda-fn
+2023-07-13 13:16:17.660,"2023-07-13T13:16:17.660Z	9e17a3e0-c3fc-4fc6-a571-5c93d8134f14	INFO	redis client ready
+",2023/07/13/[$LATEST]17b2abd831cf4b8cb62ce8dee8d82504,435639112445:/aws/lambda/redis-stack-charge_request_redis-lambda-fn
+2023-07-13 13:16:17.654,"START RequestId: 9e17a3e0-c3fc-4fc6-a571-5c93d8134f14 Version: $LATEST
+",2023/07/13/[$LATEST]17b2abd831cf4b8cb62ce8dee8d82504,435639112445:/aws/lambda/redis-stack-charge_request_redis-lambda-fn
